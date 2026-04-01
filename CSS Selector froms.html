@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Selector Forms</title>
+<style>
+/* ---------- Simple Selectors ---------- */
+/* Element selector */
+p {
+color: blue;
+}
+/* ID selector */
+#special {
+color: red;
+font-weight: bold;
+}
+/* Class selector */
+.highlight {
+background-color: yellow;
+}
+/* Group selector */
+h1, h2 {
+text-align: center;
+
+}
+/* Universal selector */
+* {
+font-family: Arial, sans-serif;
+}
+/* ---------- Combinator Selectors ---------- */
+/* Descendant selector */
+div p {
+color: green;
+}
+/* Child selector */
+div > span {
+color: purple;
+}
+/* Adjacent sibling selector */
+h2 + p {
+font-style: italic;
+}
+/* General sibling selector */
+h2 ~ p {
+font-size: 18px;
+}
+/* ---------- Pseudo-class Selector ---------- */
+a:hover {
+color: red;
+}
+/* ---------- Pseudo-element Selector ---------- */
+p::first-letter {
+font-size: 25px;
+color: brown;
+}
+/* ---------- Attribute Selector ---------- */
+input[type="text"] {
+border: 2px solid blue;
+}
+</style>
+</head>
+<body>
+<h1>CSS Selector Forms</h1>
+<h2>Simple Selectors</h2>
+<p>This is a paragraph.</p>
+
+<p id="special">This paragraph uses ID selector.</p>
+<p class="highlight">This paragraph uses class selector.</p>
+<div>
+<p>Paragraph inside div (descendant selector).</p>
+<span>Span inside div (child selector).</span>
+</div>
+<h2>Combinator Selectors</h2>
+<p>This paragraph is adjacent to h2.</p>
+<p>This paragraph is a general sibling.</p>
+<h2>Pseudo-class and Pseudo-element</h2>
+<a href="#">Hover over this link</a>
+<p>This paragraph demonstrates pseudo-element.</p>
+<h2>Attribute Selector</h2>
+<input type="text" placeholder="Text field">
+<br><br>
+<input type="password" placeholder="Password field">
+</body>
+</html>
